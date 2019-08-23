@@ -1,6 +1,6 @@
 <?php
 
-class CheckUserEncryptedData {
+class GlobalCheckUserEncryptedData {
 
 	// The data symmetrically encrypted with a random key
 	public $encString;
