@@ -12,7 +12,7 @@ class CheckUserHooks {
 	 * @return bool
 	 */
 	public static function updateCheckUserData( RecentChange $rc ) {
-		global $wgRequest;
+		global $wgRequest, $wgGlobalCheckUserWikiId;
 
 		/**
 		 * RC_CATEGORIZE recent changes are generally triggered by other edits.
@@ -52,7 +52,7 @@ class CheckUserHooks {
 			$actionText = '';
 		}
 
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_MASTER, $wiki = $wgGlobalCheckUserWikiId );
 		$rcRow = [
 			'gcuc_namespace'  => $attribs['rc_namespace'],
 			'gcuc_title'      => $attribs['rc_title'],
