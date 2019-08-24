@@ -30,7 +30,7 @@ class SpecialGlobalCheckUser extends SpecialPage {
 
 		// Blocked users are not allowed to run checkuser queries (bug T157883)
 		$block = $this->getUser()->getBlock();
-		if ( $block && $block->isSitewide() ) {
+		if ( $user->isBlocked() ) {
 			throw new UserBlockedError( $block );
 		}
 
