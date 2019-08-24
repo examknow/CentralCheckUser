@@ -47,7 +47,7 @@
 		},
 		"GlobalCheckUserGBtoollink": {
 			"value": true,
-			"description": "Whether to add links for glboally blocking accounts shown in Special:GlobalCheckUser results"
+			"description": "Whether to add links for globally blocking accounts shown in Special:GlobalCheckUser results"
 		},
 		"GlobalCheckUserLogLogins": {
 			"value": true,
@@ -122,13 +122,13 @@
 	"GroupPermissions": {
 		"globalcheckuser": {
 			"globalcheckuser": true,
-			"glboalcheckuser-log": true,
+			"GlobalCheckUser-log": true,
                         "block": true
 		}
 	},
 	"AvailableRights": [
 		"globalcheckuser",
-		"globbalcheckuser-log"
+		"globalcheckuser-log"
 	],
 	"SpecialPages": {
 		"GlobalCheckUser": "SpecialGlobalCheckUser",
