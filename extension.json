@@ -52,6 +52,10 @@
 		"GlobalCheckUserLogLogins": {
 			"value": true,
 			"description": "Whether login attempts should be logged in GlobalCheckUser logs"
+		},
+		"GlobalCheckUserWikiId": {
+			"value": 1,
+			"description": "ID of the wiki to use for CheckUser Data Storage"
 		}
 	},
 	"Hooks": {
