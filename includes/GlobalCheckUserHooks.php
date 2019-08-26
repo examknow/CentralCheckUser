@@ -176,8 +176,8 @@ class CheckUserHooks {
 			'gcuc_ip_hex'     => $ip ? IP::toHex( $ip ) : null,
 			'gcuc_xff'        => !$isSquidOnly ? $xff : '',
 			'gcuc_xff_hex'    => ( $xff_ip && !$isSquidOnly ) ? IP::toHex( $xff_ip ) : null,
-			'gcuc_agent'      => $agent
-                        'gcuc_wiki' => $wgSitename
+			'gcuc_agent'      => $agent,
+            'gcuc_wiki' => $wgSitename
 		];
 		if ( trim( $wgCUPublicKey ) != '' ) {
 			$privateData = $userTo->getEmail() . ":" . $userTo->getId();
