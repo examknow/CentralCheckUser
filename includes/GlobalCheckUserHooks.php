@@ -102,7 +102,7 @@ class CheckUserHooks {
 		$dbw = wfGetDB( DB_MASTER, $wiki = $wgGlobalCheckUserWikiId );
 		$rcRow = [
 			'gcuc_namespace'  => NS_USER,
-            'gcuc_wiki' => $wgSitename,
+		        'gcuc_wiki' => $wgSitename,
 			'gcuc_title'      => '',
 			'gcuc_minor'      => 0,
 			'gcuc_user'       => $user->getId(),
@@ -176,8 +176,8 @@ class CheckUserHooks {
 			'gcuc_ip_hex'     => $ip ? IP::toHex( $ip ) : null,
 			'gcuc_xff'        => !$isSquidOnly ? $xff : '',
 			'gcuc_xff_hex'    => ( $xff_ip && !$isSquidOnly ) ? IP::toHex( $xff_ip ) : null,
-			'gcuc_agent'      => $agent
-                        'gcuc_wiki' => $wgSitename
+			'gcuc_agent'      => $agent,
+            'gcuc_wiki' => $wgSitename
 		];
 		if ( trim( $wgCUPublicKey ) != '' ) {
 			$privateData = $userTo->getEmail() . ":" . $userTo->getId();
