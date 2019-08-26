@@ -102,7 +102,7 @@ class CheckUserHooks {
 		$dbw = wfGetDB( DB_MASTER, $wiki = $wgGlobalCheckUserWikiId );
 		$rcRow = [
 			'gcuc_namespace'  => NS_USER,
-            'gcuc_wiki' => $wgSitename,
+		        'gcuc_wiki' => $wgSitename,
 			'gcuc_title'      => '',
 			'gcuc_minor'      => 0,
 			'gcuc_user'       => $user->getId(),
