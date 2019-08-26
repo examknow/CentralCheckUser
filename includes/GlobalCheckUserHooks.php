@@ -92,14 +92,14 @@ class CheckUserHooks {
 	 * @return bool
 	 */
 	public static function updateCUPasswordResetData( User $user, $ip, $account ) {
-		global $wgRequest;
+		global $wgRequest, $wgGlobalCheckUserWikiId;
 
 		// Get XFF header
 		$xff = $wgRequest->getHeader( 'X-Forwarded-For' );
 		list( $xff_ip, $isSquidOnly ) = self::getClientIPfromXFF( $xff );
 		// Get agent
 		$agent = $wgRequest->getHeader( 'User-Agent' );
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_MASTER, $wiki = $wgGlobalCheckUserWikiId );
 		$rcRow = [
 			'gcuc_namespace'  => NS_USER,
             'gcuc_wiki' => $wgSitename,
@@ -139,7 +139,7 @@ class CheckUserHooks {
 	 * @return bool
 	 */
 	public static function updateCUEmailData( $to, $from, $subject, $text ) {
-		global $wgSecretKey, $wgRequest, $wgCUPublicKey;
+		global $wgSecretKey, $wgRequest, $wgCUPublicKey, $GlobalCheckUserWikiId;
 
 		if ( !$wgSecretKey || $from->name == $to->name ) {
 			return true;
@@ -158,7 +158,7 @@ class CheckUserHooks {
 		// Get agent
 		$agent = $wgRequest->getHeader( 'User-Agent' );
 
-		$dbr = wfGetDB( DB_REPLICA );
+		$dbr = wfGetDB( DB_REPLICA, $wiki = $wgGlobalCheckUserWikiId );
 		$rcRow = [
 			'gcuc_namespace'  => NS_USER,
 			'gcuc_title'      => '',
@@ -215,7 +215,7 @@ class CheckUserHooks {
 	 * @return bool
 	 */
 	protected static function logUserAccountCreation( User $user, $actiontext ) {
-		global $wgRequest;
+		global $wgRequest, $wgGlobalCheckUserWikiId;
 
 		// Get IP
 		$ip = $wgRequest->getIP();
@@ -224,7 +224,7 @@ class CheckUserHooks {
 		list( $xff_ip, $isSquidOnly ) = self::getClientIPfromXFF( $xff );
 		// Get agent
 		$agent = $wgRequest->getHeader( 'User-Agent' );
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_MASTER,  $wiki = $wgGlobalCheckUserWikiId );
 		$rcRow = [
 			'gcuc_page_id'    => 0,
 			'gcuc_namespace'  => NS_USER,
@@ -257,7 +257,7 @@ class CheckUserHooks {
 	public static function onAuthManagerLoginAuthenticateAudit(
 		AuthenticationResponse $ret, $user, $username
 	) {
-		global $wgRequest, $wgGlobalCheckUserLogLogins;
+		global $wgRequest, $wgGlobalCheckUserLogLogins, $wgGlobalCheckUserWikiId;
 
 		if ( !$wgGlobalCheckUserLogLogins ) {
 			return;
@@ -289,7 +289,7 @@ class CheckUserHooks {
 		$msg = wfMessage( $msg );
 		$msg->params( $target );
 
-		$dbw = wfGetDB( DB_MASTER );
+		$dbw = wfGetDB( DB_MASTER,  $wiki = $wgGlobalCheckUserWikiId );
 		$rcRow = [
 			'gcuc_page_id'    => 0,
 			'gcuc_namespace'  => NS_USER,
@@ -317,13 +317,14 @@ class CheckUserHooks {
 	 * @return true
 	 */
 	public static function maybePruneIPData() {
+		global $wgGlobalCheckUserWikiId;
 		# Every 50th edit, prune the checkuser changes table.
 		if ( 0 == mt_rand( 0, 49 ) ) {
 			$fname = __METHOD__;
 			DeferredUpdates::addCallableUpdate( function () use ( $fname ) {
 				global $wgCUDMaxAge;
 
-				$dbw = wfGetDB( DB_MASTER );
+				$dbw = wfGetDB( DB_MASTER, $wiki = $wgGlobalCheckUserWikiId );
 				$encCutoff = $dbw->addQuotes( $dbw->timestamp( time() - $wgCUDMaxAge ) );
 				$ids = $dbw->selectFieldValues( 'gcu_changes',
 					'gcuc_id',
@@ -516,7 +517,8 @@ class CheckUserHooks {
 	 * @return bool
 	 */
 	public static function doRetroactiveAutoblock( Block $block, array &$blockIds ) {
-		$dbr = wfGetDB( DB_REPLICA );
+		global $wgGlobalCheckUserWikiId;
+		$dbr = wfGetDB( DB_REPLICA, $wiki = $wgGlobalCheckUserWikiId );
 
 		$user = User::newFromName( (string)$block->getTarget(), false );
 		if ( !$user->getId() ) {
