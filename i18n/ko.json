@@ -1,0 +1,29 @@
+{
+	"@metadata": {
+		"authors": [
+			"Ykhwong"
+		]
+	},
+	"globalcheckuser-logcase": "기록 검색은 대소문자를 구분합니다.",
+	"globalcheckuser-reason": "이유:",
+	"globalcheckuser-reason-api": "API: $1",
+	"globalcheckuser-target": "IP 주소 또는 사용자 이름:",
+	"globalcheckuser-edits": "편집을 확인",
+	"globalcheckuser-ips": "IP 주소 확인",
+	"globalcheckuser-period": "기간:",
+	"globalcheckuser-week-1": "지난 1주일",
+	"globalcheckuser-week-2": "지난 2주일",
+	"globalcheckuser-month": "지난 30일",
+	"globalcheckuser-all": "모두",
+	"globalcheckuser-cidr-res": "공통 CIDR:",
+	"globalcheckuser-empty": "기록이 없습니다.",
+	"globalcheckuser-nomatch": "일치하는 결과가 없습니다.",
+	"globalcheckuser-nolog": "기록 파일이 없습니다.",
+	"globalcheckuser-massblock": "선택한 사용자 차단",
+	"globalcheckuser-massblock-commit": "선택한 사용자 차단",
+	"globalcheckuser-block-limit": "너무 많은 사용자를 선택하였습니다.",
+	"globalcheckuser-block-noreason": "차단하는 이유를 반드시 입력해야 합니다.",
+	"globalcheckuser-user-nonexistent": "해당 사용자가 존재하지 않습니다.",
+	"globalcheckuser-search-submit": "검색",
+	"globalgroup-checkuser.css": "/* 이 CSS 설정은 검사관에만 적용됩니다 */"
+}
