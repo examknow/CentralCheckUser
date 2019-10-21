@@ -19,11 +19,17 @@
 	"globalcheckuser-empty": "기록이 없습니다.",
 	"globalcheckuser-nomatch": "일치하는 결과가 없습니다.",
 	"globalcheckuser-nolog": "기록 파일이 없습니다.",
+	"globalcheckuser-gblocked": "전체 위키에서 차단됨",
+	"globalcheckuser-wasblocked": "이전에 차단됨",
 	"globalcheckuser-massblock": "선택한 사용자 차단",
 	"globalcheckuser-massblock-commit": "선택한 사용자 차단",
+	"globalcheckuser-block-failure": "'''차단된 사용자가 없습니다.'''",
 	"globalcheckuser-block-limit": "너무 많은 사용자를 선택하였습니다.",
 	"globalcheckuser-block-noreason": "차단하는 이유를 반드시 입력해야 합니다.",
+	"globalcheckuser-noreason": "검사를 수행할 이유를 지정해야 합니다.",
 	"globalcheckuser-user-nonexistent": "해당 사용자가 존재하지 않습니다.",
 	"globalcheckuser-search-submit": "검색",
-	"globalgroup-checkuser.css": "/* 이 CSS 설정은 검사관에만 적용됩니다 */"
+	"globalcheckuser-token-fail": "세션 실패. 다시 시도하십시오.",
+	"globalgroup-checkuser.css": "/* 이 CSS 설정은 검사관에만 적용됩니다 */",
+	"globalgroup-checkuser.js": "/* 이 자바스크립트 설정은 검사관에만 적용됩니다 */"
 }
