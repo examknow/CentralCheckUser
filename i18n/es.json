@@ -1,7 +1,8 @@
 {
 	"@metadata": {
 		"authors": [
-			"Hasley"
+			"Hasley",
+			"Fitoschido"
 		]
 	},
 	"globalcheckuserlog": "Registro de verificación de usuarios",
@@ -42,7 +43,7 @@
 	"globalcheckuser-block-noreason": "Debes dar una razón para los bloqueos.",
 	"globalcheckuser-centralauth-multilock": "Bloquear globalmente las cuentas seleccionadas",
 	"globalcheckuser-search-submit": "Buscar",
-	"globalcheckuser-search-target": "usuario verificado",
+	"globalcheckuser-search-target": "destino",
 	"globalcheckuser-log-search-target": "Destino:",
 	"globalcheckuser-log-search-type": "Buscar por:",
 	"globalcheckuser-ipeditcount": "~$1 de todos los usuarios",
