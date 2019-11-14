@@ -1,0 +1,43 @@
+{
+	"@metadata": {
+		"authors": [
+			"Katunchik"
+		]
+	},
+	"globalcheckuser-logcase": "Поиск в лог-файле чувствителен к регистру.",
+	"globalcheckuser": "Проверить пользователя",
+	"globalcheckuserlog": "Проверить лог пользователя",
+	"right-globalcheckuser": "Проверка IP-адресов и другой информации пользователей",
+	"action-globalcheckuser": "проверка IP-адресов и другой информации пользователей",
+	"action-globalcheckuser-log": "просмотреть лог-файл глобальной проверки пользователей",
+	"grouppage-globalcheckuser": "{{ns:project}}:глобальная проверка участников",
+	"globalcheckuser-target": "IP-адрес или имя пользователя:",
+	"globalcheckuser-users": "Найти пользователей",
+	"globalcheckuser-edits": "Получить правки",
+	"globalcheckuser-ips": "Получить IP-адреса",
+	"globalcheckuser-period": "Длительность:",
+	"globalcheckuser-week-1": "последняя неделя",
+	"globalcheckuser-month": "последние 30 дней",
+	"globalcheckuser-cidr-label": "Найти общий диапазон и затрагиваемые адреса для списка IP-адресов",
+	"globalcheckuser-nomatch-edits": "Совпадений не найдено.\nПоследняя правка сделана $1 в $2.",
+	"globalcheckuser-check": "Запустить глобальную проверку",
+	"globalcheckuser-check-this-user": "Глобально проверить этого пользователя",
+	"globalcheckuser-log-fail": "Невозможно добавить запись в лог-файл",
+	"globalcheckuser-nolog": "Лог-файл не найден",
+	"globalcheckuser-gblocked": "Заблокирован глобально",
+	"globalcheckuser-locked": "Глобально заблокирован",
+	"globalcheckuser-wasblocked": "Ранее заблокированный",
+	"globalcheckuser-massblock": "Заблокировать выбранных пользователей",
+	"globalcheckuser-blockemail": "Запретить отправлять письма по электронной почте",
+	"globalcheckuser-blocktag-talk": "Заменить страницы обсуждения на:",
+	"globalcheckuser-block-failure": "'''Нет заблокированных участников.'''",
+	"globalcheckuser-block-limit": "Выбрано слишком много пользователей.",
+	"globalcheckuser-noreason": "Вы должны указать причину запуска проверки",
+	"globalcheckuser-user-nonexistent": "Указанный пользователь не существует",
+	"globalcheckuser-search-submit": "Поиск",
+	"globalcheckuser-search-initiator": "инициатор",
+	"globalcheckuser-search-target": "цель",
+	"globalcheckuser-log-entry-ipedits": "$3, $1 получил правки для $2",
+	"globalcheckuser-log-entry-ipusers-xff": "$3 $1 получил учётные записи для XFF $2",
+	"globalcheckuser-autocreate-action": "был создан автоматически"
+}
