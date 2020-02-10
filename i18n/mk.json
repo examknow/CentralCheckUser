@@ -80,7 +80,7 @@
 	"globalcheckuser-autocreate-action": "беше автоматски создадена",
 	"globalcheckuser-create-action": "е создаден",
 	"globalcheckuser-email-action": "му испрати е-пошта на корисникот „$1“",
-	"globalcheckuser-reset-action": "смени јавка за корисникот „$1“",
+	"globalcheckuser-reset-action": "смени лозинка за корисникот „$1“",
 	"globalcheckuser-userlinks-ip": "(<span class=\"plainlinks\">[https://www.robtex.com/whois/$1.html WHOIS/RDNS]</span>)",
 	"globalcheckuser-toollinks": "<span class=\"plainlinks\">[[https://www.robtex.com/whois/$1.html WHOIS/RDNS] ·\n[https://www.robtex.com/rbls/$1.html RBL-ови] ·\n[http://www.dnsstuff.com/tools/tracert.ch?ip=$1 Traceroute] ·\n[https://www.ip2location.com/$1 Геоположба] ·\n[https://www.dan.me.uk/torcheck?ip=$1 Тор-проверка]]</span>",
 	"globalcheckuser-token-fail": "Седницата не успеа. Обидете се повторно.",
