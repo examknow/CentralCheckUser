@@ -78,6 +78,7 @@
 	"globalcheckuser-reset-action": "heeft het wachtwoord voor gebruiker \"$1\" opnieuw ingesteld",
 	"globalcheckuser-token-fail": "Sessie is mislukt. Probeer het opnieuw.",
 	"globalcheckuser-login-failure": "Kon niet als $1 inloggen op {{SITENAME}}",
+	"globalcheckuser-login-success": "({{SITENAME}}) $1 successvol aangemeld",
 	"globalgroup-checkuser.css": "/* CSS die hier wordt geplaatst heeft alleen invloed op checkuser */",
 	"globalgroup-checkuser.js": "/* JS die hier wordt geplaatst heeft alleen invloed op checkuser */"
 }
