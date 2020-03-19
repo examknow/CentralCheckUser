@@ -13,7 +13,7 @@
 	"globalcheckuser-contribs-log": "останні перевірки користувача",
 	"group-globalcheckuser": "Глобальні чек'юзери",
 	"group-globalcheckuser-member": "{{GENDER:$1|чек'юзер|чек'юзерка}}",
-	"right-globalcheckuser": "перевірка IP-адрес та іншої інформації про користувача",
+	"right-globalcheckuser": "Перевірка IP-адрес та іншої інформації про користувача",
 	"right-globalcheckuser-log": "перегляд журналу перевірки користувачів",
 	"action-globalcheckuser": "перевірку IP-адрес та іншої інформації про користувача",
 	"action-globalcheckuser-log": "перегляд глобального журналу перевірки користувачів",
