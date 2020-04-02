@@ -1,5 +1,7 @@
 <?php
 
+use Wikimedia\IPUtils;
+
 class SpecialGlobalCheckUserLog extends SpecialPage {
 	/**
 	 * @var string $target
@@ -136,7 +138,7 @@ class SpecialGlobalCheckUserLog extends SpecialPage {
 	 * @return array|null array if valid target, null if invalid target given
 	 */
 	protected function getTargetSearchConds() {
-		list( $start, $end ) = IP::parseRange( $this->target );
+		list( $start, $end ) = IPUtils::parseRange( $this->target );
 		$conds = null;
 
 		if ( $start !== false ) {
