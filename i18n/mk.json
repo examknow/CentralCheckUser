@@ -12,7 +12,7 @@
 	"globalcheckuser-contribs": "провери IP-адреси на корисникот",
 	"globalcheckuser-contribs-log": "скорешни проверки",
 	"group-globalcheckuser": "Глобална проверка на корисници",
-	"group-globalcheckuser-member": "{{GENDER:$1|проверувач на корисници}}",
+	"group-globalcheckuser-member": "{{GENDER:$1|проверувач}}",
 	"right-globalcheckuser": "Проверување на корисничка IP-адреса и други информации",
 	"right-globalcheckuser-log": "Гледање дневник на проверување на корисник",
 	"action-globalcheckuser": "проверување на корисничка IP-адреса и други информации",
@@ -86,6 +86,6 @@
 	"globalcheckuser-token-fail": "Седницата не успеа. Обидете се повторно.",
 	"globalcheckuser-login-failure": "Не успеав да ве најавам на {{SITENAME}} како $1",
 	"globalcheckuser-login-success": "({{SITENAME}}) $1 успешно се најави",
-	"globalgroup-checkuser.css": "/* Тука поставениот CSS ќе се применува само врз проверувачи на корисници */",
-	"globalgroup-checkuser.js": "/* Тука поставениот JS ќе се применува само врз проверувачи на корисници */"
+	"globalgroup-checkuser.css": "/* Тука поставениот CSS ќе се применува само врз проверувачи */",
+	"globalgroup-checkuser.js": "/* Тука поставениот JS ќе се применува само врз проверувачи */"
 }
