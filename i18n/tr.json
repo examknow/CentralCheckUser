@@ -49,7 +49,7 @@
 	"globalcheckuser-massblock": "Seçili kullanıcıları engelle",
 	"globalcheckuser-massblock-text": "Seçilen hesaplar süresiz olarak engellenir, IP adreslerinin otomatik olarak bloke edilmesi etkinleştirilir ve hesap oluşturma devre dışı bırakılır.\nIP adresleri yalnızca anonim kullanıcılar için bir hafta süreyle engellenir ve hesap oluşturma devre dışı bırakılır.",
 	"globalcheckuser-blockemail": "E-posta göndermesini önle",
-	"globalcheckuser-blocktalk": "Engellenirken kendi konuşma sayfalarını düzenlemeyi önle",
+	"globalcheckuser-blocktalk": "Engellenirken kendi tartışma sayfalarını düzenlemeyi önle",
 	"globalcheckuser-blocktag": "Kullanıcı sayfalarını şununla değiştir:",
 	"globalcheckuser-blocktag-talk": "Tartışma sayfalarını şununla değiştir:",
 	"globalcheckuser-massblock-commit": "Seçili kullanıcıları engelle",
