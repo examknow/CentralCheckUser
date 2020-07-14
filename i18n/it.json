@@ -11,7 +11,7 @@
 	"globalcheckuser-ips": "Ottieni indirizzi IP",
 	"globalcheckuser-week-2": "ultime due settimane",
 	"globalcheckuser-cidr-res": "CIDR comune:",
-	"globalcheckuser-empty": "Il log non contiene dati.",
+	"globalcheckuser-empty": "Il registro non contiene dati.",
 	"globalcheckuser-nomatch": "Nessun risultato trovato.",
 	"globalcheckuser-blocked": "Bloccato localmente",
 	"globalcheckuser-blocktag": "Sostituisci pagine utente con:",
