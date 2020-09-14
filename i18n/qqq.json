@@ -1,11 +1,12 @@
 {
 	"@metadata": {
 		"authors": [
+			"MuratTheTurkish",
 			"Patriot Kur",
 			"Robby"
 		]
 	},
 	"globalcheckuser-reason": "{{Identical|Reason:]]",
 	"globalcheckuser-all": "{{Identical|All}}",
-	"globalcheckuser-search-submit": "{{Identical|Bınəv}}"
+	"globalcheckuser-search-submit": ""
 }
