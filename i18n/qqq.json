@@ -3,10 +3,11 @@
 		"authors": [
 			"MuratTheTurkish",
 			"Patriot Kur",
-			"Robby"
+			"Robby",
+			"Umherirrender"
 		]
 	},
 	"globalcheckuser-reason": "{{Identical|Reason:]]",
 	"globalcheckuser-all": "{{Identical|All}}",
-	"globalcheckuser-search-submit": ""
+	"globalcheckuser-search-submit": "{{Identical|Search}}"
 }
